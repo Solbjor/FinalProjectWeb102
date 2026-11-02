@@ -1,0 +1,89 @@
+:root {
+  --bg: #0d1520;
+  --surface: #162231;
+  --surface-2: #1f3045;
+  --border: #2b3f57;
+  --text: #dbe4ee;
+  --muted: #8195ab;
+  --accent: #4f8fd6;
+  --accent-hover: #6aa3e3;
+  --danger: #b4505a;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+}
+a { color: inherit; text-decoration: none; }
+h1, h2 { margin: 0.25rem 0; }
+h2 { font-size: 1.1rem; }
+.muted { color: var(--muted); font-size: 0.875rem; }
+
+.nav {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0.9rem 1.5rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+.brand { font-weight: 700; font-size: 1.2rem; letter-spacing: 0.03em; }
+.nav nav { display: flex; gap: 1.25rem; }
+.nav nav a { color: var(--muted); }
+.nav nav a:hover, .nav nav a.active { color: var(--text); }
+
+.container { max-width: 720px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+
+.card {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 0.75rem 0;
+}
+a.card:hover { border-color: var(--accent); }
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font: inherit;
+}
+input:focus, textarea:focus, select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+
+button, .btn {
+  display: inline-block;
+  padding: 0.55rem 1rem;
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  font: inherit;
+  cursor: pointer;
+}
+button:hover, .btn:hover { background: var(--accent-hover); }
+.secondary { background: var(--surface-2); color: var(--text); }
+.secondary:hover { background: var(--border); }
+.danger { background: var(--danger); }
+.danger:hover { background: #c9636d; }
+
+.toolbar { display: flex; gap: 0.75rem; }
+.toolbar select { width: auto; }
+.feed, .comments { list-style: none; padding: 0; margin: 0; }
+.post-row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.votes { color: var(--accent); font-weight: 600; white-space: nowrap; }
+
+.form label { display: block; margin: 1rem 0; color: var(--muted); font-size: 0.9rem; }
+.form input, .form textarea { margin-top: 0.3rem; }
+
+.post-img { max-width: 100%; border-radius: 6px; margin: 0.75rem 0; }
+.body { white-space: pre-wrap; }
+.actions { display: flex; gap: 0.6rem; margin-top: 1rem; }
+.comment-form { display: flex; gap: 0.6rem; }
+.comment-form input { flex: 1; }
+.comments .card p { margin: 0 0 0.25rem; }
