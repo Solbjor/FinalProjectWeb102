@@ -4,6 +4,9 @@ Submitted by: **Andrew Solbjor**
 
 This web app: **SkyHub is a forum for aviation enthusiasts. Pilots, student pilots, and plane spotters can share posts (with optional text and an image), browse a feed sorted by newest or most upvoted, search by title, upvote posts, and discuss them in the comments. Data is stored in Supabase.**
 
+Deployment
+https://final-project-web102-alpha.vercel.app/
+
 Time spent: **X** hours spent in total
 
 ## Required Features
